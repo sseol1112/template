@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구독서비스 템플릿</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../ex01/js/ex01.js" defer></script>
+    <link rel="stylesheet" href="../ex01/css/ex01.css">
+</head>
+<body>
+    <div class="section">
+        <div class="list_wrap">
+            <div class="total_area">
+                <p>총<em class="total">5</em>개</p>
+            </div>
+            <div class="btn_area">
+                <button class="btn_dark">다크모드</button>
+                <button class="btn_del">삭제</button>
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        <input type="checkbox" name="chk1" class="ico_check" id="item1">
+                        <div class="title_wrap">
+                            <div class="badge gray_c">건조기</div>
+                            <h3><label for="item1">트롬 오브제컬렉션 건조기</label></h3>
+                        </div>
+                        <div class="price_wrap">
+                            <p><span class="gray_c" style="text-decoration: line-through;">39,900원</span></p>
+                            <p><span style="color:red; font-size:18px;" class="percent">9%</span><strong style="font-size:20px; margin-left:22px;">36,000</strong>원</strong></p>
+                            <div class="status_bar"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" name="chk1" class="ico_check" id="item2">
+                        <div class="title_wrap">
+                            <div class="badge gray_c">식기세척기</div>
+                            <h3><label for="item2">트롬 오브제컬렉션 식기세척기</label></h3>
+                        </div>
+                        <div class="price_wrap">
+                            <p><span class="gray_c" style="text-decoration: line-through;">39,900원</span></p>
+                            <p><span style="color:red; font-size:18px;" class="percent">16%</span><strong style="font-size:20px; margin-left:22px;">36,000</strong>원</strong></p>
+                            <div class="status_bar"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" name="chk1" class="ico_check" id="item3">
+                        <div class="title_wrap">
+                            <div class="badge gray_c">세탁기</div>
+                            <h3><label for="item3">트롬 오브제컬렉션 세탁기</label></h3>
+                        </div>
+                        <div class="price_wrap">
+                            <p><span class="gray_c df_price">39,900원</span></p>
+                            <p><span style="color:red; font-size:18px;" class="percent">50%</span><strong style="font-size:20px; margin-left:22px;">19,950</strong>원</strong></p>
+                            <div class="status_bar"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <input type="checkbox" name="chk1" class="ico_check" id="item4">
+                        <div class="title_wrap">
+                            <div class="badge gray_c">스타일러</div>
+                            <h3><label for="item4">LG 스타일러</label></h3>
+                        </div>
+                        <div class="price_wrap">
+                            <p><span class="gray_c df_price">39,900원</span></p>
+                            <p><span style="color:red; font-size:18px;" class="percent">80%</span><strong style="font-size:20px; margin-left:22px;">7,900</strong>원</strong></p>
+                            <div class="status_bar"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slide_container">
+            <input type="range" value="4" min="1" max="7" class="slider" id="myRange" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+            </datalist>
+            <div class="value_wrap">
+                <span id="value"></span>
+            </div>
+        </div>
+        <div class="scroll_wrap">
+            <h2>scroll 이벤트 예시</h2>
+            <div class="scroll_inner">
+                <p>
+                    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.
+                    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.
+                    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.
+                    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.
+                    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.
+                    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.
+                    Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
