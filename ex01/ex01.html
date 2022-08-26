@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>구독서비스 템플릿</title>
+    <title>구독서비스 템플릿 연습용 예제</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../ex01/js/ex01.js" defer></script>
     <link rel="stylesheet" href="../ex01/css/ex01.css">
@@ -12,13 +12,17 @@
 <body>
     <div class="section">
         <div class="list_wrap">
-            <div class="total_area">
-                <p>총<em class="total">5</em>개</p>
+            <h3 class="title">구독서비스 다중 제품 리스트</h3>
+            <div class="top_area">
+                <div class="total_area">
+                    <p>총<em class="total">5</em>개</p>
+                </div>
+                <div class="btn_area">
+                    <button class="btn_dark">다크모드</button>
+                    <button class="btn_del">삭제</button>
+                </div>    
             </div>
-            <div class="btn_area">
-                <button class="btn_dark">다크모드</button>
-                <button class="btn_del">삭제</button>
-            </div>
+            
             <ul>
                 <li>
                     <div>
@@ -79,6 +83,7 @@
             </ul>
         </div>
         <div class="slide_container">
+            <h3 class="title">구독서비스 range 케이스</h3>
             <input type="range" value="4" min="1" max="7" class="slider" id="myRange" list="tickmarks">
             <datalist id="tickmarks">
                 <option value="1"></option>
@@ -94,7 +99,7 @@
             </div>
         </div>
         <div class="scroll_wrap">
-            <h2>scroll 이벤트 예시</h2>
+            <h3 class="title">구독서비스 scroll 케이스</h3>
             <div class="scroll_inner">
                 <p>
                     Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea. <br/>
