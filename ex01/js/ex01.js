@@ -52,27 +52,34 @@
 
             self.scrollInnerEl.addEventListener('scroll', function(e){
                 let scrollVal = self.scrollInnerEl.scrollTop;
-                console.log(e);
+                //console.log(e);
                 self.outputValue.textContent = `scroll 값 : ${scrollVal}`
-                if(scrollVal >= '100') {
+                if(scrollVal >= '100' && scrollVal < '200') {
                     self.outputValue.style.background= 'blue';
                     self.outputValue.style.color= 'white';
+                    self.scrollInnerEl.style.background='darkgray';
+                    self.scrollInnerEl.style.color = "white";
+                    console.log(scrollVal)
+                } else if(scrollVal >= '200'){
+                    self.scrollInnerEl.style.background='darkorange';
                 } else {
                     self.outputValue.style.background= 'white';
                     self.outputValue.style.color= 'black';
+                    self.scrollInnerEl.style.background='white';
+                    self.scrollInnerEl.style.color = "black";
                 }
             })
         },
         setDisplayMode : function(){
             const self = this;
             if(self.darkBtn.classList.contains('dark')){
-                console.log("일반모드");
+                //console.log("일반모드");
                 self.darkBtn.classList.remove('dark');
                 self.sectionEl.style.background = 'white';
                 self.sectionEl.style.color = 'black';
                 self.darkBtn.innerText = "다크모드";
             } else {
-                console.log("다크모드");
+                //console.log("다크모드");
                 self.darkBtn.classList.add('dark');
                 self.sectionEl.style.background = 'black';
                 self.sectionEl.style.color = 'white';
@@ -89,7 +96,7 @@
 
                 const perArrVal = parseInt(self.percent[i].textContent);
                 perLengNum.push(perArrVal);
-                console.log(perLengNum);
+                //console.log(perLengNum);
             }
 
             for(let j=0; j<statusLeng; j++) {
